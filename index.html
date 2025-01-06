@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="navbar-brand">Digital Solutions</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#services" id="nav-services"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="nav-contact">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-outline"
+                id="language-dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  id="world-icon"
+                  src="assets/mundo.png"
+                  alt="Idioma"
+                  width="24"
+                  height="24"
+                />
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="language-dropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="es">Español</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="en">English</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="pt">Português</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-lang="qc">Quechua</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline" id="theme-toggle">
+                <img
+                  id="theme-icon"
+                  src="assets/Sol.png"
+                  alt="Sun"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <h1 id="header-title">Desarrollo Web y SEO Profesional</h1>
+      <p id="header-description">
+        Potenciamos tu presencia online con sitios web personalizados y
+        optimización para motores de búsqueda
+      </p>
+      <a href="#contact" class="btn" id="contact-button">Contáctanos</a>
+    </header>
+
+    <section class="services-section" id="services">
+      <h2 id="services-title">Nuestros Servicios</h2>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="assets/code.svg"
+                  alt="Desarrollo Web"
+                  class="card-icon"
+                />
+                <h3 class="card-title" id="service-web">Desarrollo Web</h3>
+                <p class="card-text" id="service-web-description">
+                  Creamos sitios web personalizados, diseñados para destacar tu
+                  negocio o marca personal con un enfoque profesional y
+                  funcional.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img src="assets/search.svg" alt="SEO" class="card-icon" />
+                <h3 class="card-title" id="service-seo">Optimización SEO</h3>
+                <p class="card-text" id="service-seo-description">
+                  Mejoramos tu presencia en línea para asegurar que tu sitio sea
+                  fácilmente encontrado por los motores de búsqueda.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="assets/phone.svg"
+                  alt="Responsive"
+                  class="card-icon"
+                />
+                <h3 class="card-title" id="service-responsive">
+                  Diseño Responsive
+                </h3>
+                <p class="card-text" id="service-responsive-description">
+                  Desarrollamos sitios web que se adaptan perfectamente a todos
+                  los dispositivos, desde móviles hasta desktops.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="assets/globe.svg"
+                  alt="Marketing Digital"
+                  class="card-icon"
+                />
+                <h3 class="card-title" id="service-marketing">
+                  Marketing Digital
+                </h3>
+                <p class="card-text" id="service-marketing-description">
+                  Implementamos estrategias de marketing digital para aumentar
+                  tu visibilidad online y atraer más clientes potenciales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 20px;
+        "
+      >
+        <!-- Sección izquierda: WebSEO Pro -->
+        <div style="flex: 1; text-align: left">
+          <h1 style="font-size: 24px">Digital Solutions</h1>
+          <p id="descripcion-empresa">
+            Potenciando tu presencia online con desarrollo web y SEO de calidad.
+          </p>
+        </div>
+
+        <!-- Sección derecha: Contáctanos -->
+        <div style="flex: 1; text-align: right">
+          <h2 id="descripcion-contacto">Contáctanos</h2>
+          <p id="descripcion-correo">
+            Email:
+            <a
+              href="mailto:info@webseopro.com"
+              style="color: #fff; text-decoration: none"
+              >info@webseopro.com</a
+            >
+          </p>
+          <p id="descripcion-telefono">Teléfono: +1 234 567 890</p>
+          <p id="descripcion-direccion">Dirección: Lima, Perú.</p>
+
+          <!-- Icono de Instagram -->
+          <p id="descripcion-instagram">
+            Síguenos en Instagram:
+            <a
+              href="https://www.instagram.com/tu_instagram/"
+              target="_blank"
+              style="color: #e4405f; text-decoration: none; font-size: 24px"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Sección inferior: Derechos reservados -->
+      <div style="text-align: center; padding-top: 20px">
+        <p id="descripcion-derechos">
+          © 2023 WebSEO Pro. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
